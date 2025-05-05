@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shahnaous Shikto | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Shahnaous Shikto</h1>
+      <p class="subtitle">Aspiring Data Scientist | Python Enthusiast</p>
+      <nav class="social-links">
+        <a href="https://www.linkedin.com/in/shikto/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/sh1kto" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="assets/Shahnaous_Shikto_Resume.pdf" class="resume-btn small" download>
+          <i class="fas fa-download"></i> CV
+        </a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+  
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2><i class="fas fa-hand-paper"></i> About Me</h2>
+      <p>
+        I'm an aspiring Data Scientist with a strong foundation in Python, statistics, and data analysis. I enjoy turning raw data into actionable insights and building predictive models. Currently focused on machine learning, data visualization, and projects like recommendation systems and text-based games.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2><i class="fas fa-rocket"></i> Projects</h2>
+      <div class="card">
+        <h3><i class="fas fa-film"></i> Movie Recommender System</h3>
+        <p>Collaborative filtering-based recommendation engine built in Python.</p>
+        <a href="https://github.com/your-username/movie-recommender" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-gamepad"></i> Text-Based Adventure Game</h3>
+        <p>Command-line RPG game using conditionals, functions, and OOP.</p>
+        <a href="https://github.com/your-username/text-adventure-game" target="_blank">View on GitHub →</a>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2><i class="fas fa-tools"></i> Skills & Tech Stack</h2>
+      <div class="card">
+        <h3><i class="fas fa-terminal"></i> Programming</h3>
+        <p><strong>Languages:</strong> Python, SQL, Bash/Shell, R (optional)</p>
+        <p><strong>Tools:</strong> Jupyter Notebook, Kaggle, Arch Linux</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-brain"></i> Data Science</h3>
+        <p><strong>Manipulation:</strong> Pandas, NumPy, OpenPyXL, Tabulate</p>
+        <p><strong>Visualization:</strong> Matplotlib, Seaborn, Plotly, Altair</p>
+        <p><strong>Machine Learning:</strong> Scikit-learn, XGBoost, LightGBM, TensorFlow/PyTorch</p>
+      </div>
+      <div class="card">
+        <h3><i class="fas fa-language"></i> NLP</h3>
+        <p>NLTK, spaCy, Transformers (by Hugging Face)</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2><i class="fas fa-envelope"></i> Contact</h2>
+      <p>Email: <a href="mailto:placeholder@mail">placeholder@mail</a></p>
+      <p>GitHub: <a href="https://github.com/sh1kto">github.com/sh1kto</a></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Shahnaous Shikto. Made with <i class="fas fa-laptop-code"></i> on Arch Linux.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    toggle.addEventListener('click', () => {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', newTheme);
+      toggle.innerHTML = newTheme === 'dark'
+        ? '<i class="fas fa-sun"></i>'
+        : '<i class="fas fa-moon"></i>';
+    });
+  </script>
+</body>
+</html>
