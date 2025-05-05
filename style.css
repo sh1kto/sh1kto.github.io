@@ -162,6 +162,43 @@
     color: var(--link);
     text-decoration: none;
   }
+
+  .experience-item {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+  }
+  
+  .experience-item:hover {
+    transform: translateY(-3px);
+  }
+  
+  .experience-item h3 {
+    margin-bottom: 0.25rem;
+    font-size: 1.25rem;
+    color: var(--primary);
+  }
+  
+  .organization {
+    font-style: italic;
+    color: var(--text-secondary);
+  }
+  
+  .duration {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+  }
+  
+  .experience-details {
+    padding-left: 1.2rem;
+    list-style-type: disc;
+    color: var(--text);
+  }
+  
   
   /* Footer */
   .footer {
